@@ -19,10 +19,9 @@ def fundSearch():
 def fundTest():
     return render_template('predict.html')
 
-
-@app.route("/성향진단.html", methods=['GET', 'POST'])
+@app.route("/analysis.html", methods=['GET', 'POST'])
 def fundPredict():
-    return render_template('성향진단.html')
+    return render_template('analysis.html')
 
 
 @app.route("/login.html", methods=['GET', 'POST'])
