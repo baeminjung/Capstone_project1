@@ -9,6 +9,22 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+
+@app.route("/fundsearch.html", methods=['GET', 'POST'])
+def fundSearch():
+    return render_template('fundsearch.html')
+
+
+@app.route("/predict.html", methods=['GET', 'POST'])
+def fundTest():
+    return render_template('predict.html')
+
+
+@app.route("/성향진단.html", methods=['GET', 'POST'])
+def fundPredict():
+    return render_template('성향진단.html')
+
+
 @app.route("/login.html", methods=['GET', 'POST'])
 def fundLogin():
     return render_template('login.html')
